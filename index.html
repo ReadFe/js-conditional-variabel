@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Variable</title>
+</head>
+<body>
+    <script>
+
+        const harga = 25000;
+
+
+    // Conditional Variable
+
+        const tawaran = harga < 20000 ? 'terlalu murah' : 'terlalu mahal'
+        console.log(tawaran);
+
+    // Eksplorasi Javascript
+        const setuju = harga > 20000 && 'saya setuju dengan harga tersebut';
+        const menolak = harga < 20000 || 'saya tidak setuju dengan harga itu';
+
+        console.log(setuju);
+        console.log(menolak);
+
+
+
+    // Manipulasi data Array dengan map dan filter
+        const barang = [
+            {   
+                nama: "Bola", 
+                warna: "Merah", 
+                harga: 10 
+            },
+            {   
+                nama: "Buku", 
+                warna: "Biru", 
+                harga: 5 
+            },
+            {   
+                nama: "Pensil", 
+                warna: "Kuning", 
+                harga: 15 
+            }
+        ]
+
+        // map
+        const namaBarang = barang.map((benda)=> benda.nama)
+        console.log(namaBarang)
+
+        const warnaBarang = barang.map((benda)=> benda.warna)
+        console.log(warnaBarang)
+
+        // filter
+        const murah = barang.filter((benda) => benda.harga < 12)
+        console.log(murah)
+
+
+    </script>
+</body>
+</html>
